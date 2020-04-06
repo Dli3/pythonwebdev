@@ -1,0 +1,32 @@
+{%extends "layout.html"%}
+
+{%block heading%}
+Contact
+{%endblock%}
+
+{%block body%}
+    <form action = "{{url_for('contact')}}" method="post">
+        <label>First Name:</label>
+        <input type = "text" name="name" placeholder = "First Name" required>
+        <label>Last Name:</label>
+        <input type = "text" name="name" placeholder = "Last Name" required>
+        <label>Email</label>
+        <input type = "email" name ="email" placeholder="Email" required>
+        <label>Phone Number</label>
+        <input type = "tel" name="phone" placeholder = "Phone Number" required>
+
+        <button>Submit</button>
+    </form>
+
+
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li><a href='https://www.google.com'>dennis@gmail.com</a></li>
+        <li><a href='https://www.google.com'>415-351-1234</a></li>
+        <li><a href='https://www.linkedin.com/'>LinkedIn</a></li>
+        <li><a href='https://www.github.com/'>GitHub</li>
+    </ul>
+
+
+{%endblock%}

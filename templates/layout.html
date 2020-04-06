@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <nav>
+            <a href="{{url_for('index')}}">Home</a>
+            <a href="{{url_for('skills')}}">Skills</a>
+            <a href="{{url_for('experience')}}">Experience</a>
+            <a href="{{url_for('contact')}}">Contact</a>
+        </nav>
+        <h1>{% block heading %} {% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

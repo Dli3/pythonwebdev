@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+Skills
+{% endblock %}
+
+{% block body %}
+<ul>
+    {% for skill in skills%}
+    <li>{{skill}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
